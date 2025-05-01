@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  backend1:
+    image: node:18
+    container_name: backend1
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    ports:
+      - "3001:3000"
+    command: sh -c "npm install && node app.js"
+
+  backend2:
+    image: node:18
+    container_name: backend2
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    ports:
+      - "3002:3000"
+    command: sh -c "npm install && node app.js"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-lb
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./logs:/var/log/nginx

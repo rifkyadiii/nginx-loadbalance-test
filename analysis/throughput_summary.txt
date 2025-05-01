@@ -1,0 +1,6 @@
+results/lc_run1.txt:Requests per second:    2254.74 [#/sec] (mean)
+results/lc_run2.txt:Requests per second:    1874.53 [#/sec] (mean)
+results/lc_run3.txt:Requests per second:    1853.57 [#/sec] (mean)
+results/rr_run1.txt:Requests per second:    2184.04 [#/sec] (mean)
+results/rr_run2.txt:Requests per second:    2079.93 [#/sec] (mean)
+results/rr_run3.txt:Requests per second:    2171.56 [#/sec] (mean)
