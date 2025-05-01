@@ -1,0 +1,45 @@
+This is ApacheBench, Version 2.3 <$Revision: 1923142 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3002
+
+Document Path:          /api/delay/10api/delay/10api/delay/10api/delay/100api/delay/100api/delay/100
+Document Length:        214 bytes
+
+Concurrency Level:      50
+Time taken for tests:   0.305 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      458000 bytes
+HTML transferred:       214000 bytes
+Requests per second:    3273.78 [#/sec] (mean)
+Time per request:       15.273 [ms] (mean)
+Time per request:       0.305 [ms] (mean, across all concurrent requests)
+Transfer rate:          1464.25 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.4      0       2
+Processing:     4   14   3.1     14      26
+Waiting:        1   11   2.7     11      20
+Total:          4   15   3.1     15      26
+ERROR: The median and mean for the initial connection time are more than twice the standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%     15
+  66%     16
+  75%     17
+  80%     17
+  90%     18
+  95%     19
+  98%     20
+  99%     26
+ 100%     26 (longest request)
