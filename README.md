@@ -49,6 +49,8 @@ Clone repositori ini ke mesin lokal Anda:
 
 ```bash
 git clone https://github.com/rifkyadiii/nginx-loadbalance-test.git
+```
+```bash
 cd nginx-loadbalance-test
 ```
 
